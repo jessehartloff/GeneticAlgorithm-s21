@@ -16,6 +16,11 @@ class Song(val title: String, val artist: String, val youtubeId: String, val rat
     Statistics.average(ratings, (rating: SongRating) => rating.energy)
   }
 
+  // comment this in when you complete LT3 to compute the bayesian average of song ratings
+//  def bayesianRating(extraRatings: Int, valueOfExtraRatings: Int): Double = {
+//    Statistics.bayesianAverage(this.ratings, (rating: SongRating) => rating.rating, extraRatings, valueOfExtraRatings)
+//  }
+
 }
 
 
